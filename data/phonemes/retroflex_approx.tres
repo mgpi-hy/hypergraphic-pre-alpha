@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PhonemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/phoneme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "retroflex_approx"
+display_name = "Retroflex Surge"
+ipa_symbol = "\u027b"
+description = "Gain 5 insulation and draw 2 extra morphemes"
+rarity = 1
+is_consumable = true
+semant_cost = 10
+effects = []

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GraphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/grapheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "rare_ef"
+display_name = "Ef"
+symbol = "Ф"
+description = "Family mixing penalty reduced from x0.75 to x0.85."
+family = 3
+rarity = 1
+semant_cost = 18
+acquisition = 0
+effects = []

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PiIrrationalPrecisionEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/pi_precision.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Irrational Precision"
+description = "All induction calculations round up"
+trigger = 5
+priority = 50

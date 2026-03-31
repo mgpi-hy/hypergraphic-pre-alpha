@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TauShortMorphemeEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/tau_short_morpheme.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Short Morpheme"
+description = "Morphemes with exactly {target_length} letters get +{bonus} induction"
+trigger = 0
+priority = 100
+target_length = 3
+bonus = 1

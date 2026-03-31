@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DagazEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/dagaz.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Death Save"
+description = "First lethal hit per combat: survive at 1 cogency, +{induction_bonus} induction next submit"
+trigger = 8
+priority = 50
+induction_bonus = 5

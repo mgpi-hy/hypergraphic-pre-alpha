@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GraphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/grapheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "rare_long"
+display_name = "Long"
+symbol = "龍"
+description = "3+ graphemes: all additive grapheme bonuses +1. Lose 3 cogency at start of each combat."
+family = 3
+rarity = 4
+semant_cost = 35
+acquisition = 0
+effects = []

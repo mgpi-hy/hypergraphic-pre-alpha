@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RareYeryHardenedEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/rare_yery_hardened.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Hardened Vowel"
+description = "Insulation doesn't degrade on hits <={damage_threshold}"
+trigger = 15
+priority = 20
+damage_threshold = 3

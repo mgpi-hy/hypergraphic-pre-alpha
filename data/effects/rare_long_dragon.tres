@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="RareLongDragonEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/rare_long_dragon.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Dragon Scale"
+description = "3+ relics: all additive relic bonuses +{bonus_per_relic}"
+trigger = 14
+priority = 100
+bonus_per_relic = 1
+combat_start_cost = 3
+min_relic_count = 3

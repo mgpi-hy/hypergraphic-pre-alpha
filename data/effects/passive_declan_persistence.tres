@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PassiveDeclanPersistenceEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/passive_declan_persistence.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Declension"
+description = "Insulation persists between turns (x{persistence_multiplier} decay, cap {insulation_cap})"
+trigger = 15
+priority = 10
+persistence_multiplier = 1.5
+insulation_cap = 25

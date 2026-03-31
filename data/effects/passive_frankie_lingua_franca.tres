@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PassiveFrankieLinguaFrancaEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/passive_frankie_lingua_franca.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Lingua Franca"
+description = "x{mix_bonus} bonus for mixing morpheme families (instead of penalty)"
+trigger = 14
+priority = 10
+mix_bonus = 1.25

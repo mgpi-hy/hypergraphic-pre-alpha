@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LatinMMemTideEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_m_mem_tide.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Mem's Tide"
+description = "Full tree submit: +{induction_bonus} induction to all words next turn"
+trigger = 0
+priority = 120
+induction_bonus = 3

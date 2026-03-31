@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LatinNNunSpineEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_n_nun_spine.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Nun's Spine"
+description = "0 insulation at end of turn: gain {insulation_bonus} next turn"
+trigger = 4
+priority = 100
+insulation_bonus = 3

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PhonemePharyngealCopyEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/phoneme_pharyngeal_copy.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Pharyngeal Copy"
+description = "Duplicate last placed word; novel copy gets x{novel_multiplier}"
+trigger = 0
+priority = 100
+novel_multiplier = 1.5

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LatinOAyinGazeEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_o_ayin_gaze.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Ayin's Gaze"
+description = "Once per turn: exile lowest-weight morpheme, draw 2 replacements"
+trigger = 3
+priority = 110

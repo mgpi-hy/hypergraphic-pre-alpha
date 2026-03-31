@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GraphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/grapheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "rare_huo"
+display_name = "Huo"
+symbol = "火"
+description = "After submitting, highest-induction word burns its POS slot (any POS fits next turn)."
+family = 3
+rarity = 2
+semant_cost = 22
+acquisition = 0
+effects = []

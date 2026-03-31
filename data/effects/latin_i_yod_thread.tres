@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="LatinIYodThreadEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_i_yod_thread.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Yod's Thread"
+description = "{threshold}+ affixes this submit: +{bonus_per_extra} induction per affix beyond 2nd"
+trigger = 0
+priority = 100
+threshold = 3
+bonus_per_extra = 2

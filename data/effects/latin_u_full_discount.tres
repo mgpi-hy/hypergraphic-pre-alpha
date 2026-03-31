@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="LatinUFullDiscountEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_u_full_discount.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Full Sentence Discount"
+description = "Full tree: reduce next shop purchase by {discount_per_full_tree} semant (stacks to -{max_discount})"
+trigger = 0
+priority = 120
+discount_per_full_tree = 3
+max_discount = 9

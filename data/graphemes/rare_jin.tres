@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GraphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/grapheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "rare_jin"
+display_name = "Jin"
+symbol = "金"
+description = "+1 semant per multiplier activated on submission."
+family = 3
+rarity = 2
+semant_cost = 24
+acquisition = 0
+effects = []

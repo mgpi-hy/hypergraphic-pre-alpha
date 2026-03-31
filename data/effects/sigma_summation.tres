@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SigmaSummationEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/sigma_summation.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Summation"
+description = "+1 induction per morpheme placed this submit"
+trigger = 0
+priority = 100

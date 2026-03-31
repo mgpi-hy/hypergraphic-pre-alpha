@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/region_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "amygdala"
+display_name = "AMYGDALA"
+description = ""
+boss_id = "brocas_aphasia"
+leads_to = ["brocas_area", "insular_cortex"]
+act = 2
+modifier_name = "Fight or Flight"
+modifier_id = "fight_or_flight"
+modifier_description = "All induction and insulation +25%, but you take +25% damage too."
+ambient_mode = ""
+node_type_weights = {}
+color = Color(1, 0.541, 0.396, 1)
+complexity = "simple"

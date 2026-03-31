@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RareHardSignImpermeableEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/rare_hard_sign_impermeable.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Impermeable"
+description = "Once per combat: completely block one enemy attack"
+trigger = 15
+priority = 10

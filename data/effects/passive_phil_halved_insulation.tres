@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PassivePhilHalvedInsulationEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/passive_phil_halved_insulation.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Halved Insulation"
+description = "Insulation gains are halved"
+trigger = 15
+priority = 20
+insulation_fraction = 0.5

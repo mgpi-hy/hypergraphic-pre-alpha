@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MorphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/morpheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "crat"
+display_name = "crat"
+root_text = "crat"
+ipa = "/kɹæt/"
+family = 2
+pos_type = 0
+type = 0
+is_affix = false
+affix_slots = 2
+base_induction = 2
+combat_role = 0
+rarity = 0
+effects = []

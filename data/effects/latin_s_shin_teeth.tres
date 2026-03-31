@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LatinSShinTeethEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_s_shin_teeth.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Shin's Teeth"
+description = "When hit: gain a temporary Spite root (+3 induction, any POS)"
+trigger = 8
+priority = 100

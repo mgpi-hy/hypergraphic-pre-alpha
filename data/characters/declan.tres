@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/character_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "latin"
+display_name = "Declan"
+language = "Latin"
+passive_name = "Declension"
+passive_description = "x1.25 insulation, persists between turns (caps at 25). Can stack up to 5 affixes per word."
+passive_effects = []
+primary_family = 1
+allowed_families = [1]
+starter_cogency = 50
+starter_hand_size = 8
+color = Color(1, 0.702, 0, 1)
+ascii_art = " _||_
+| || |
+| || |
+|_||_|
+ /||"
+unlock_condition = "region_3"
+unlock_description = "CLEAR ACT 3"

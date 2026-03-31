@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ChiMorphemeSwapEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/chi_morpheme_swap.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Morpheme Swap"
+description = "Start of turn: swap 1 hand morpheme with 1 from draw pile"
+trigger = 3
+priority = 100

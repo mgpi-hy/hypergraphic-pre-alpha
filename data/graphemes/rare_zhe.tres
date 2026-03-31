@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GraphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/grapheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "rare_zhe"
+display_name = "Zhe"
+symbol = "Ж"
+description = "Facing 2+ enemies: +3 induction to all words. If insulation is 0, +5 instead."
+family = 3
+rarity = 0
+semant_cost = 10
+acquisition = 0
+effects = []

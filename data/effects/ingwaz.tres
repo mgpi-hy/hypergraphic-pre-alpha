@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="IngwazEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/ingwaz.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Branch Heal"
+description = "Complete a branch = heal {heal_amount} cogency"
+trigger = 0
+priority = 110
+heal_amount = 2

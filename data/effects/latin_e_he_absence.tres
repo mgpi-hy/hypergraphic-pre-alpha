@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LatinEHeAbsenceEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_e_he_absence.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "He's Absence"
+description = "Each unfilled optional slot at submit grants +{insulation_per_empty} insulation"
+trigger = 0
+priority = 110
+insulation_per_empty = 2

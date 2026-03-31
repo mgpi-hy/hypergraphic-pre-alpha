@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LatinDDalethBulwarkEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_d_daleth_bulwark.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Daleth's Bulwark"
+description = "End of turn: if insulation > 0, gain +{insulation_bonus} insulation"
+trigger = 4
+priority = 100
+insulation_bonus = 2

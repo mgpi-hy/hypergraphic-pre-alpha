@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PhonemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/phoneme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "lateral_approx"
+display_name = "Lateral Drift"
+ipa_symbol = "\u026c"
+description = "All morphemes in hand temporarily match any POS for 1 turn."
+rarity = 2
+is_consumable = true
+semant_cost = 16
+effects = []

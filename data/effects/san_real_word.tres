@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SanRealWordBonusEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/san_real_word.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Real Word Bonus"
+description = "Real English words (not novel) grant +{semant_per_word} semant"
+trigger = 10
+priority = 100
+semant_per_word = 1

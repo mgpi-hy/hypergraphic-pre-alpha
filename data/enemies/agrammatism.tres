@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/enemy_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "agrammatism"
+display_name = "AGRAMMATISM"
+tier = 1
+cogency = 90
+base_damage = 8
+scaling_factor = 2
+first_floor = 3
+intent_pool = [{"type": 0, "value": 0}, {"type": 5, "value": 1}]
+mechanic = "lock_slot"
+mechanic_interval = 2
+phase_threshold = 0.5
+phase_mechanic = "lock_slot"
+phase_text = "GRAMMAR COLLAPSES"
+phase_thresholds = []
+phase_mechanics = []
+phase_texts = []
+effect_immunity = ""
+effect_reflect = ""
+color = Color(0.702, 0.533, 1, 1)
+glitch_density = 0.3

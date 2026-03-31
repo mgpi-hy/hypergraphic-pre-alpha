@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RareLongDragonCostEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/rare_long_dragon_cost.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Dragon Scale Cost"
+description = "Lose {cogency_cost} cogency at start of each combat"
+trigger = 5
+priority = 50
+cogency_cost = 3

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PhonemeOpenLatticeEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/phoneme_open_lattice.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Open Lattice"
+description = "Add a wildcard slot; Greek root in it = draw {greek_bonus_draw}"
+trigger = 0
+priority = 100
+greek_bonus_draw = 2

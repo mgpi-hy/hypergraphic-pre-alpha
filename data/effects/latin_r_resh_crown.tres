@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LatinRReshCrownEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_r_resh_crown.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Resh's Crown"
+description = "Highest-induction word each submit gets +25%"
+trigger = 0
+priority = 130
+bonus_pct = 0.25

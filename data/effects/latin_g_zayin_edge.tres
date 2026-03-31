@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LatinGZayinEdgeEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_g_zayin_edge.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Zayin's Edge"
+description = "All required slots filled, no optionals = x{multiplier} multiplier"
+trigger = 0
+priority = 90
+multiplier = 1.75

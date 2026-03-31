@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GraphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/grapheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "futhark_thurisaz"
+display_name = "Thurisaz"
+symbol = "ᚦ"
+description = "Insulation absorbs damage = deal 2 back."
+family = 1
+rarity = 1
+semant_cost = 16
+acquisition = 0
+effects = []

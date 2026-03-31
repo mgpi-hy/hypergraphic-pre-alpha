@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PhonemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/phoneme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "bilabial_click"
+display_name = "Click Swap"
+ipa_symbol = "\u0298"
+description = "Swap roots between hand and discard. Swapped-in roots matching tree POS gain +3 induction this turn."
+rarity = 1
+is_consumable = true
+semant_cost = 10
+effects = []

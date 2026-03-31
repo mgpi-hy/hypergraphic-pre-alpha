@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GraphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/grapheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "futhark_dagaz"
+display_name = "Dagaz"
+symbol = "ᛞ"
+description = "First lethal hit per combat: survive at 1 cogency, +5 induction next submit."
+family = 1
+rarity = 2
+semant_cost = 0
+acquisition = 2
+effects = []

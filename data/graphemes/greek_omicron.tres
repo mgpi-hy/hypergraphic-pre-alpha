@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GraphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/grapheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "greek_omicron"
+display_name = "Omicron"
+symbol = "Ο"
+description = "Each word with correct POS match grants +1 insulation."
+family = 2
+rarity = 1
+semant_cost = 16
+acquisition = 0
+effects = []

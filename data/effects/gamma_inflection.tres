@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GammaInflectionEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/gamma_inflection.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Inflection Point"
+description = "Cogency below 50%: all induction +{induction_bonus}% rest of combat"
+trigger = 8
+priority = 100
+induction_bonus = 0.3

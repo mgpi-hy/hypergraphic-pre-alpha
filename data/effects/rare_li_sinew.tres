@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RareLiSinewEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/rare_li_sinew.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Sinew Force"
+description = "+1 induction per word submitted this turn (escalating)"
+trigger = 10
+priority = 100

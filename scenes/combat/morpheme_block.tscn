@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://morpheme_block"]
+
+[ext_resource type="Script" path="res://scripts/combat/morpheme_block.gd" id="1_morpheme"]
+
+[node name="MorphemeBlock" type="PanelContainer"]
+custom_minimum_size = Vector2(80, 60)
+script = ExtResource("1_morpheme")

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LatinXSamekhScaffoldEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_x_samekh_scaffold.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Samekh's Scaffold"
+description = "Optional slots generate x{upgraded_optional_mult} instead of x1.5 when filled"
+trigger = 5
+priority = 50
+upgraded_optional_mult = 1.75

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WunjoEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/wunjo.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Joy of Victory"
+description = "Heal {heal_amount} cogency after defeating any enemy"
+trigger = 9
+priority = 100
+heal_amount = 3

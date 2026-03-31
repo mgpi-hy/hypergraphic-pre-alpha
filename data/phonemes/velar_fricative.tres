@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PhonemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/phoneme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "velar_fricative"
+display_name = "Velar Gambit"
+ipa_symbol = "\u0263"
+description = "Submit your current tree immediately, even incomplete. Unfilled slots deal their induction as self-damage."
+rarity = 2
+is_consumable = true
+semant_cost = 14
+effects = []

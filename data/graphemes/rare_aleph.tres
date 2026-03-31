@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GraphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/grapheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "rare_aleph"
+display_name = "Aleph"
+symbol = "א"
+description = "First affix placed each turn grants x1.2 induction on its word."
+family = 3
+rarity = 0
+semant_cost = 12
+acquisition = 0
+effects = []

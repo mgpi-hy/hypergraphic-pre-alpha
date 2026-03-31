@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LatinCGimelBountyEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_c_gimel_bounty.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Gimel's Bounty"
+description = "Each unique POS type submitted grants +{semant_per_pos} semant"
+trigger = 0
+priority = 110
+semant_per_pos = 1

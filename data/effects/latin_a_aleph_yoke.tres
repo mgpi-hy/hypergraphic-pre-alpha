@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LatinAAlephYokeEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_a_aleph_yoke.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Aleph's Yoke"
+description = "+{bonus_per_root} induction per root placed this submit"
+trigger = 10
+priority = 100
+bonus_per_root = 1

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RhoDeepDrawEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/rho_deep_draw.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Deep Draw"
+description = "Start of combat: draw {extra_draw} extra. Hand size +{hand_size_bonus} permanently"
+trigger = 5
+priority = 60
+extra_draw = 1
+hand_size_bonus = 1

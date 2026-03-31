@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/enemy_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "neologism"
+display_name = "NEOLOGISM"
+tier = 1
+cogency = 110
+base_damage = 10
+scaling_factor = 2
+first_floor = 4
+intent_pool = [{"type": 0, "value": 0}, {"type": 0, "value": 0}, {"type": 3, "value": 2}]
+mechanic = "cancel_novel"
+mechanic_interval = 1
+phase_threshold = 0.5
+phase_mechanic = "swap_pos"
+phase_text = "NEOLOGISM DESTABILIZES"
+phase_thresholds = []
+phase_mechanics = []
+phase_texts = []
+effect_immunity = "drain"
+effect_reflect = ""
+color = Color(1, 0.835, 0.31, 1)
+glitch_density = 0.45

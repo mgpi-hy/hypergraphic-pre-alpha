@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/character_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "greek"
+display_name = "Phil"
+language = "Greek"
+passive_name = "Compounding"
+passive_description = "Slots hold up to 5 roots, each gives x1.15 bonus. Reduced insulation."
+passive_effects = []
+primary_family = 2
+allowed_families = [2]
+starter_cogency = 55
+starter_hand_size = 7
+color = Color(0.878, 0.251, 0.984, 1)
+ascii_art = " _
+| \\
+|_/
+|"
+unlock_condition = "victory"
+unlock_description = "WIN A RUN"

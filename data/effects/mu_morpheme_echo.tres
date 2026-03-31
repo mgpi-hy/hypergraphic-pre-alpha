@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MuMorphemeEchoEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/mu_morpheme_echo.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Morpheme Echo"
+description = "Submit exactly {required_word_count} words: duplicate random discard into hand"
+trigger = 0
+priority = 110
+required_word_count = 2

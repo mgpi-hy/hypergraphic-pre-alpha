@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ZetaCompoundForceEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/zeta_sigma.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Compound Force"
+description = "3+ morpheme words get +{bonus} induction"
+trigger = 0
+priority = 100
+morpheme_threshold = 3
+bonus = 3

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GraphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/grapheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "greek_psi"
+display_name = "Psi"
+symbol = "Ψ"
+description = "Enemies dealing >8 deal exactly 8; enemies dealing <=3 deal 0."
+family = 2
+rarity = 2
+semant_cost = 0
+acquisition = 2
+effects = []

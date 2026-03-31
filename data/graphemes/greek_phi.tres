@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GraphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/grapheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "greek_phi"
+display_name = "Phi"
+symbol = "Φ"
+description = "Each root beyond the first in a single word grants +2 induction to that word."
+family = 2
+rarity = 0
+semant_cost = 0
+acquisition = 3
+effects = []

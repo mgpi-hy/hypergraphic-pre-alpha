@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FehuEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/fehu.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Cattle Price"
+description = "+{semant_bonus} semant from every combat victory"
+trigger = 6
+priority = 100
+semant_bonus = 2

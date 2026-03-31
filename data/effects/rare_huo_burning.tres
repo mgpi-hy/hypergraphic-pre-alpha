@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RareHuoBurningEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/rare_huo_burning.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Burning Lexicon"
+description = "After submitting, highest-induction word burns its POS slot (any POS next turn)"
+trigger = 0
+priority = 100

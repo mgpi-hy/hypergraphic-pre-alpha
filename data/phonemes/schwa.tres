@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PhonemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/phoneme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "schwa"
+display_name = "Reduction"
+ipa_symbol = "\u0259"
+description = "Draw 3 morphemes, but exile the highest-weight one drawn."
+rarity = 0
+is_consumable = true
+semant_cost = 7
+effects = []

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="OmegaFinalWordEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/omega_final_word.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Final Word"
+description = "Last word each turn gets x1.5 induction"
+trigger = 0
+priority = 120
+multiplier_bonus = 0.5

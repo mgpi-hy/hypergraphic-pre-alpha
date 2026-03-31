@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RareJinGoldenEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/rare_jin_golden.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Golden Yield"
+description = "+1 semant per multiplier activated on submission"
+trigger = 0
+priority = 110

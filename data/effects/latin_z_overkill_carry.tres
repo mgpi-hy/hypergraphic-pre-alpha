@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LatinZOverkillCarryEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_z_overkill_carry.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Overkill Carry"
+description = "Overkill damage carries to next enemy; if none, heals cogency"
+trigger = 9
+priority = 100

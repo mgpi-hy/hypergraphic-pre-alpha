@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GeboEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/gebo.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Gift Exchange"
+description = "Discard hand without submitting = gain {insulation_bonus} insulation"
+trigger = 2
+priority = 100
+insulation_bonus = 3

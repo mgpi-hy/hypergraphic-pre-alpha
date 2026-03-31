@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/region_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "temporal_lobe"
+display_name = "TEMPORAL LOBE"
+description = ""
+boss_id = "the_seizure"
+leads_to = []
+act = 4
+modifier_name = "Cascade"
+modifier_id = "cascade"
+modifier_description = "Every 2 turns, a random previous region modifier activates on top of base rules."
+ambient_mode = ""
+node_type_weights = {}
+color = Color(0, 0.941, 0.565, 1)
+complexity = "complex"

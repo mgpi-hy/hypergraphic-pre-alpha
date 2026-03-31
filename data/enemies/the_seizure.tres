@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/enemy_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "the_seizure"
+display_name = "THE SEIZURE"
+tier = 2
+cogency = 260
+base_damage = 10
+scaling_factor = 2
+first_floor = 13
+intent_pool = [{"type": 0, "value": 0}, {"type": 0, "value": 0}, {"type": 2, "value": 2}, {"type": 5, "value": 2}, {"type": 3, "value": 2}]
+mechanic = "shift_tree"
+mechanic_interval = 2
+phase_threshold = 0.0
+phase_mechanic = ""
+phase_text = ""
+phase_thresholds = [0.75, 0.5, 0.25]
+phase_mechanics = ["seizure_phase_1", "seizure_phase_2", "seizure_phase_3"]
+phase_texts = ["SPREADING", "SEIZING", "TOTAL SEIZURE"]
+effect_immunity = ""
+effect_reflect = "burn"
+color = Color(1, 0.118, 0.251, 1)
+glitch_density = 0.7

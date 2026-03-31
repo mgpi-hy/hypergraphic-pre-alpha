@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RareMuExtraBranchEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/rare_mu_extra_branch.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Extra Branch"
+description = "Syntax tree gains 1 additional optional slot on longest branch"
+trigger = 5
+priority = 90

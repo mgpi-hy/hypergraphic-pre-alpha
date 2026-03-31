@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GraphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/grapheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "greek_pi"
+display_name = "Pi"
+symbol = "Π"
+description = "All induction calculations round up. POS match bonus: x1.5 -> x1.75."
+family = 2
+rarity = 0
+semant_cost = 10
+acquisition = 0
+effects = []

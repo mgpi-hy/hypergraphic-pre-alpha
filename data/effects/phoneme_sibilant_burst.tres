@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PhonemeSibilantBurstEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/phoneme_sibilant_burst.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Sibilant Burst"
+description = "Next word x{germanic_multiplier} if Germanic, x{fallback_multiplier} otherwise"
+trigger = 0
+priority = 100
+germanic_multiplier = 2.0
+fallback_multiplier = 1.5

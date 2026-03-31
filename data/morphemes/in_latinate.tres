@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MorphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/morpheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "in"
+display_name = "in-"
+root_text = "in-"
+ipa = "/ɪn/"
+family = 1
+pos_type = 0
+type = 1
+is_affix = true
+affix_slots = 0
+base_induction = 1
+combat_role = 1
+rarity = 0
+effects = []

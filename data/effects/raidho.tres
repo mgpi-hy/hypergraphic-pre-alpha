@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RaidhoEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/raidho.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Journey Rune"
+description = "+{bonus_per_floor} induction per floor cleared (caps +{max_bonus})"
+trigger = 14
+priority = 100
+bonus_per_floor = 1
+max_bonus = 10

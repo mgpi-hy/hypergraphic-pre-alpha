@@ -1,0 +1,28 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; but it can also be manually edited with care.
+
+[configuration]
+
+config_version=5
+
+[application]
+
+config/name="Hypergraphic Pre-Alpha"
+run/main_scene="res://scenes/screens/title_screen.tscn"
+config/features=PackedStringArray("4.6")
+
+[autoload]
+
+EventBus="*res://scripts/autoloads/event_bus.gd"
+SceneTransition="*res://scripts/autoloads/scene_transition.gd"
+SaveManager="*res://scripts/autoloads/save_manager.gd"
+GameManager="*res://scripts/autoloads/game_manager.gd"
+AmbientAudio="*res://scripts/autoloads/ambient_audio.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"

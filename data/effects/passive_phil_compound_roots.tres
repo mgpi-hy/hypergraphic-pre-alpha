@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PassivePhilCompoundRootsEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/passive_phil_compound_roots.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Compounding"
+description = "Up to {max_roots} roots, x{multiplier_per_root} each"
+trigger = 14
+priority = 10
+multiplier_per_root = 1.1
+max_roots = 4

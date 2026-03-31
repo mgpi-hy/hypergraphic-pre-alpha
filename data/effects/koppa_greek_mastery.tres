@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="KoppaGreekMasteryEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/koppa_greek_mastery.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Greek Mastery"
+description = "Greek morphemes +{base_bonus} induction (+{full_greek_bonus} if all roots Greek)"
+trigger = 0
+priority = 100
+base_bonus = 2
+full_greek_bonus = 4

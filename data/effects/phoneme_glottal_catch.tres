@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PhonemeGlottalCatchEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/phoneme_glottal_catch.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Glottal Catch"
+description = "Clear all placed words; draw {draw_per_word} per word cleared"
+trigger = 0
+priority = 100
+draw_per_word = 2

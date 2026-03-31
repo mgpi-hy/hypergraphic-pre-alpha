@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LatinKKaphGraspEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_k_kaph_grasp.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Kaph's Grasp"
+description = "Retain 1 unplaced morpheme between turns"
+trigger = 3
+priority = 100

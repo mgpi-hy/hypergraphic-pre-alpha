@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="AlphaFirstPrincipleEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/alpha_first_principle.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "First Principle"
+description = "First word each turn gets x1.25 induction"
+trigger = 0
+priority = 100
+multiplier_bonus = 0.25

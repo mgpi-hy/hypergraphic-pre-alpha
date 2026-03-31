@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LatinAEVowelMergerEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_ae_vowel_merger.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Vowel Merger"
+description = "2+ words share family: all get +{bonus_induction} induction"
+trigger = 0
+priority = 100
+bonus_induction = 2

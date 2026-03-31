@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PhonemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/phoneme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "palatal_nasal"
+display_name = "Palatal Yield"
+ipa_symbol = "\u0272"
+description = "Gain 5 semant. Discard 1 random morpheme from hand."
+rarity = 0
+is_consumable = true
+semant_cost = 6
+effects = []

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/region_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "corpus_callosum"
+display_name = "CORPUS CALLOSUM"
+description = ""
+boss_id = "wernickes_aphasia"
+leads_to = ["temporal_lobe"]
+act = 3
+modifier_name = "Lateralization"
+modifier_id = "lateralization"
+modifier_description = "Hand split left/right. Left morphemes only go in left tree slots, right in right."
+ambient_mode = ""
+node_type_weights = {}
+color = Color(0.933, 0.933, 0.933, 1)
+complexity = "complex"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LatinQQophExpansionEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_q_qoph_expansion.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Qoph's Expansion"
+description = "Relic cap +{cap_increase}"
+trigger = 5
+priority = 50
+cap_increase = 1

@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/enemy_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "wernickes_aphasia"
+display_name = "WERNICKE'S APHASIA"
+tier = 2
+cogency = 135
+base_damage = 7
+scaling_factor = 3
+first_floor = 10
+intent_pool = [{"type": 0, "value": 0}, {"type": 0, "value": 0}, {"type": 4, "value": 3}, {"type": 3, "value": 2}]
+mechanic = "swap_pos"
+mechanic_interval = 2
+phase_threshold = 0.4
+phase_mechanic = "hide_pos"
+phase_text = "COMPREHENSION DISSOLVES"
+phase_thresholds = []
+phase_mechanics = []
+phase_texts = []
+effect_immunity = "drain"
+effect_reflect = ""
+color = Color(0, 0.898, 1, 1)
+glitch_density = 0.45

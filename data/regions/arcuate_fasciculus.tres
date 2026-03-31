@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/region_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "arcuate_fasciculus"
+display_name = "ARCUATE FASCICULUS"
+description = ""
+boss_id = "wernickes_aphasia"
+leads_to = ["temporal_lobe"]
+act = 3
+modifier_name = "Conduction"
+modifier_id = "conduction"
+modifier_description = "Completing a branch pre-fills one slot in the next branch with a copy of your last placed morpheme."
+ambient_mode = ""
+node_type_weights = {}
+color = Color(0.251, 0.769, 1, 1)
+complexity = "complex"

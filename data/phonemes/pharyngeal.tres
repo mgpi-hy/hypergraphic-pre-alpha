@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PhonemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/phoneme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "pharyngeal"
+display_name = "Pharyngeal Copy"
+ipa_symbol = "\u0127"
+description = "Duplicate last placed word. If the copy is a novel word, x1.5 bonus."
+rarity = 2
+is_consumable = true
+semant_cost = 18
+effects = []

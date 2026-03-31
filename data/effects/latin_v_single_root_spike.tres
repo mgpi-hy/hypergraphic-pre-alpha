@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LatinVSingleRootSpikeEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_v_single_root_spike.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Single Root Spike"
+description = "Single-morpheme words deal +{bonus_induction} induction"
+trigger = 10
+priority = 100
+bonus_induction = 5

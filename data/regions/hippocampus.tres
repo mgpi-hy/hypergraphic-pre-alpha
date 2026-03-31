@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/region_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "hippocampus"
+display_name = "HIPPOCAMPUS"
+description = ""
+boss_id = "brocas_aphasia"
+leads_to = ["angular_gyrus", "arcuate_fasciculus", "cingulate_cortex"]
+act = 2
+modifier_name = "Consolidation"
+modifier_id = "consolidation"
+modifier_description = "Previously submitted words get +1 induction on replay. Rewards depth over breadth."
+ambient_mode = ""
+node_type_weights = {}
+color = Color(1, 0.835, 0.31, 1)
+complexity = "simple"

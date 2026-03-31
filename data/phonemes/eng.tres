@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PhonemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/phoneme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "eng"
+display_name = "Nasal Resonance"
+ipa_symbol = "\u014b"
+description = "Heal cogency equal to morphemes in hand x2."
+rarity = 0
+is_consumable = true
+semant_cost = 8
+effects = []

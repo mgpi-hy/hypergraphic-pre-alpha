@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/enemy_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "dysphemia"
+display_name = "DYSPHEMIA"
+tier = 0
+cogency = 55
+base_damage = 5
+scaling_factor = 2
+first_floor = 1
+intent_pool = [{"type": 0, "value": 0}, {"type": 0, "value": 0}, {"type": 5, "value": 1}]
+mechanic = "shrink_hand"
+mechanic_interval = 3
+phase_threshold = 0.5
+phase_mechanic = ""
+phase_text = ""
+phase_thresholds = []
+phase_mechanics = []
+phase_texts = []
+effect_immunity = ""
+effect_reflect = ""
+color = Color(0.937, 0.325, 0.314, 1)
+glitch_density = 0.35

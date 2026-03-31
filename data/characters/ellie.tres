@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/character_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "french"
+display_name = "Ellie"
+language = "French"
+passive_name = "Elision"
+passive_description = "Empty optional slots grant x1.25 bonus each. Rewards strategic absence over filling everything."
+passive_effects = []
+primary_family = 1
+allowed_families = [1]
+starter_cogency = 45
+starter_hand_size = 8
+color = Color(1, 0.42, 0.616, 1)
+ascii_art = " ~~
+(  )
+ ||
+/_\\"
+unlock_condition = "region_1"
+unlock_description = "CLEAR ACT 1"

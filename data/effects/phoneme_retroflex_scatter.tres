@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PhonemeRetroflexScatterEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/phoneme_retroflex_scatter.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Retroflex Scatter"
+description = "Randomize enemy intents and shuffle order; 30% one attacks twice"
+trigger = 0
+priority = 100
+double_attack_chance = 0.3

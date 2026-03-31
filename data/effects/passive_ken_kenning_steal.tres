@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PassiveKenKenningStealEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/passive_ken_kenning_steal.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Kenning Steal"
+description = "Kennings (2+ noun roots) steal half their induction as cogency"
+trigger = 10
+priority = 20
+min_noun_roots = 2

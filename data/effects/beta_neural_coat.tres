@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BetaNeuralCoatEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/beta_neural_coat.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Neural Coat"
+description = "Start of turn: gain insulation equal to morphemes in hand"
+trigger = 3
+priority = 100

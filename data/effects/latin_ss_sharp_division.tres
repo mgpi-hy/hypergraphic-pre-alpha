@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LatinSSSharpDivisionEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_ss_sharp_division.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Sharp Division"
+description = "Enemy below {hp_threshold} cogency: your induction doubled"
+trigger = 0
+priority = 50
+hp_threshold = 10

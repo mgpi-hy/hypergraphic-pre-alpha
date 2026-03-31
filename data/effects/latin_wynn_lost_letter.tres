@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LatinWynnLostLetterEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_wynn_lost_letter.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Lost Letter"
+description = "Once per combat: recall all discarded morphemes to draw pile"
+trigger = 3
+priority = 120
+discard_threshold = 3

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/character_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "old_english"
+display_name = "Ken"
+language = "Old English"
+passive_name = "Kenning"
+passive_description = "No insulation. Kennings (two noun roots) steal cogency equal to half their induction."
+passive_effects = []
+primary_family = 0
+allowed_families = [0]
+starter_cogency = 50
+starter_hand_size = 6
+color = Color(0, 0.816, 1, 1)
+ascii_art = " /\\
+< R >
+ \\/
+ |:|"
+unlock_condition = "region_2"
+unlock_description = "CLEAR ACT 2"

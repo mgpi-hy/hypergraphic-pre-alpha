@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PerthroEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/perthro.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Wild Draw"
+description = "Start of turn: 1 random hand morpheme replaced by random morpheme from outside deck"
+trigger = 3
+priority = 90

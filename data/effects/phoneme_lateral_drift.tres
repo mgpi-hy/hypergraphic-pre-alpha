@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PhonemeLateralDriftEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/phoneme_lateral_drift.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Lateral Drift"
+description = "All hand morphemes match any POS this turn"
+trigger = 0
+priority = 100

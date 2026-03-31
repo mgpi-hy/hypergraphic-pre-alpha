@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://enemy_panel"]
+
+[ext_resource type="Script" path="res://scripts/combat/enemy_panel.gd" id="1_enemy"]
+
+[node name="EnemyPanel" type="PanelContainer"]
+custom_minimum_size = Vector2(200, 80)
+script = ExtResource("1_enemy")

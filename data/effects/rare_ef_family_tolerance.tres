@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RareEfFamilyToleranceEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/rare_ef_family_tolerance.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Family Tolerance"
+description = "Family mixing penalty reduced from x0.75 to x0.85"
+trigger = 14
+priority = 100
+reduced_penalty = 0.85

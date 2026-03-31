@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PassiveEllieElisionEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/passive_ellie_elision.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Elision"
+description = "x{multiplier_per_slot} per empty optional slot at submission"
+trigger = 14
+priority = 10
+multiplier_per_slot = 1.25

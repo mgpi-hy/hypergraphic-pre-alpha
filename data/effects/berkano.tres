@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BerkanoEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/berkano.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Foundation Root"
+description = "First root placed each turn counts as POS-matched regardless of slot"
+trigger = 0
+priority = 80

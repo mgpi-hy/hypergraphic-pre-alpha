@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="AlgizEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/algiz.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Elk Sedge"
+description = "+{insulation_bonus} insulation at the start of each combat"
+trigger = 5
+priority = 100
+insulation_bonus = 3

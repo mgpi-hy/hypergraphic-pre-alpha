@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/region_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "brainstem"
+display_name = "BRAINSTEM"
+description = ""
+boss_id = "brocas_aphasia"
+leads_to = ["amygdala", "hippocampus", "wernickes_area"]
+act = 1
+modifier_name = "Reflex"
+modifier_id = "reflex"
+modifier_description = "First word submitted each turn gets x1.3 induction, but placed morphemes can't be rearranged."
+ambient_mode = ""
+node_type_weights = {}
+color = Color(1, 0.118, 0.251, 1)
+complexity = "simple"

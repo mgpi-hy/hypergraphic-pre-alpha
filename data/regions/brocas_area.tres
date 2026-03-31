@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/region_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "brocas_area"
+display_name = "BROCA'S AREA"
+description = ""
+boss_id = "wernickes_aphasia"
+leads_to = ["temporal_lobe"]
+act = 3
+modifier_name = "Expressive Aphasia"
+modifier_id = "expressive_aphasia"
+modifier_description = "One word per turn only, but base induction x1.5."
+ambient_mode = ""
+node_type_weights = {}
+color = Color(0, 0.816, 1, 1)
+complexity = "simple"

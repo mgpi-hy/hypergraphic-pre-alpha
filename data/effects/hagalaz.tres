@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="HagalazEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/hagalaz.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Hailstrike"
+description = "Once per combat: negate excess damage above {damage_cap} from a single hit"
+trigger = 15
+priority = 20
+damage_cap = 10

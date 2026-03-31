@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SampiNinthWordEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/sampi_ninth_word.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Ninth Word"
+description = "Every {word_interval}th word in run: triple induction"
+trigger = 10
+priority = 90
+word_interval = 9

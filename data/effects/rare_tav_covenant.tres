@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RareTavCovenantEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/rare_tav_covenant.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Covenant Mark"
+description = "After {threshold} unique words, permanently +{induction_bonus} induction to all"
+trigger = 10
+priority = 100
+threshold = 10
+induction_bonus = 2

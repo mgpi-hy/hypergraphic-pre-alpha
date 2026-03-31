@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PhiRootLatticeEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/phi_root_lattice.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Root Lattice"
+description = "Each root beyond the first in a word grants +{bonus_per_extra_root} induction"
+trigger = 0
+priority = 100
+bonus_per_extra_root = 2

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PsiDamageCompressionEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/psi_damage_compression.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Damage Compression"
+description = "Enemies dealing >{upper_cap} deal exactly {upper_cap}; dealing <={lower_threshold} deal 0"
+trigger = 15
+priority = 20
+upper_cap = 8
+lower_threshold = 3

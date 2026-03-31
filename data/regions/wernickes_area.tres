@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/region_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "wernickes_area"
+display_name = "WERNICKE'S AREA"
+description = ""
+boss_id = "wernickes_aphasia"
+leads_to = ["prefrontal_cortex", "parietal_lobe", "corpus_callosum"]
+act = 2
+modifier_name = "Receptive Aphasia"
+modifier_id = "receptive_aphasia"
+modifier_description = "POS slots hidden until a morpheme is placed, which reveals adjacent slots."
+ambient_mode = ""
+node_type_weights = {}
+color = Color(1, 0.835, 0.31, 1)
+complexity = "complex"

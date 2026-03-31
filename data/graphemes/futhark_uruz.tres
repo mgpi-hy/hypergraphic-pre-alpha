@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GraphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/grapheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "futhark_uruz"
+display_name = "Uruz"
+symbol = "ᚢ"
+description = "First word each turn +3 induction. If insulation is 0, +5 instead."
+family = 1
+rarity = 0
+semant_cost = 0
+acquisition = 3
+effects = []

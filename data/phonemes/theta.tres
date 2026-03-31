@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PhonemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/phoneme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "theta"
+display_name = "Dental Shield"
+ipa_symbol = "\u03b8"
+description = "Gain 15 insulation. If already above 10, gain 5 instead."
+rarity = 0
+is_consumable = true
+semant_cost = 7
+effects = []

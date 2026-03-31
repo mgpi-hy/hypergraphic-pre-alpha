@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="IotaSmallFormEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/iota_small_form.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Small Form"
+description = "Play a morpheme with {max_letters} or fewer letters: draw {draw_count}"
+trigger = 0
+priority = 100
+max_letters = 3
+draw_count = 1

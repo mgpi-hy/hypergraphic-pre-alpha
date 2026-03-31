@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SowiloEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/sowilo.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Solar Flare"
+description = "Full tree submit = deal {aoe_damage} damage to ALL enemies"
+trigger = 0
+priority = 110
+aoe_damage = 5

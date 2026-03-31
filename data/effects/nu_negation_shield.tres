@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="NuNegationShieldEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/nu_negation_shield.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Negation Shield"
+description = "Negation affixes (un-, in-, dis-, -less) grant +{insulation_per_affix} insulation each"
+trigger = 0
+priority = 100
+insulation_per_affix = 3

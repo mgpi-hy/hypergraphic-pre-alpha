@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LatinYNullSubmitEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_y_null_submit.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Null Submit"
+description = "Submit 0 words: shuffle hand into draw pile instead of discarding"
+trigger = 5
+priority = 100

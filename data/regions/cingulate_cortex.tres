@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/region_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "cingulate_cortex"
+display_name = "CINGULATE CORTEX"
+description = ""
+boss_id = "wernickes_aphasia"
+leads_to = ["temporal_lobe"]
+act = 3
+modifier_name = "Error Signal"
+modifier_id = "error_signal"
+modifier_description = "Incomplete branches deal 1 self-damage per empty slot. Complete branches grant +1 insulation per slot."
+ambient_mode = ""
+node_type_weights = {}
+color = Color(1, 0.502, 0.671, 1)
+complexity = "simple"

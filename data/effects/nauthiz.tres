@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NauthizEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/nauthiz.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Necessity's Spur"
+description = "{root_threshold} or fewer root morphemes in hand = all multipliers +{multiplier_bonus}"
+trigger = 0
+priority = 100
+multiplier_bonus = 0.5
+root_threshold = 3

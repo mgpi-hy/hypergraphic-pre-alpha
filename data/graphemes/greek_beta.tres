@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GraphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/grapheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "greek_beta"
+display_name = "Beta"
+symbol = "Β"
+description = "5+ morphemes in hand at turn start: all words this turn +2 induction."
+family = 2
+rarity = 0
+semant_cost = 12
+acquisition = 0
+effects = []

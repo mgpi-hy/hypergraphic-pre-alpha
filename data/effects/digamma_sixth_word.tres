@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="DigammaSixthWordEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/digamma_sampi.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Sixth Word"
+description = "Every {word_interval}th word submitted: draw {extra_draw} extra next turn"
+trigger = 10
+priority = 100
+word_interval = 6
+extra_draw = 3

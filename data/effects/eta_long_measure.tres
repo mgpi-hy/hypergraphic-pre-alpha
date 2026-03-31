@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EtaLongMeasureEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/eta_long_measure.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Long Measure"
+description = "+{hand_size_bonus} max hand size permanently"
+trigger = 5
+priority = 50
+hand_size_bonus = 1

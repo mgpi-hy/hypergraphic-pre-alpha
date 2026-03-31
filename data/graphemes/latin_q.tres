@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GraphemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/grapheme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "latin_q"
+display_name = "Q"
+symbol = "Q"
+description = "Grapheme cap +1 (10 to 11); can't drop below 2 graphemes."
+family = 0
+rarity = 2
+semant_cost = 26
+acquisition = 1
+effects = []

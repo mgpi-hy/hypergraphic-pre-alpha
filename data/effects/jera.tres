@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="JeraEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/jera.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Harvest Cycle"
+description = "Every {trigger_interval}rd turn, gain +{insulation_bonus} insulation"
+trigger = 3
+priority = 100
+trigger_interval = 3
+insulation_bonus = 5

@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/enemy_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "anomia"
+display_name = "ANOMIA"
+tier = 1
+cogency = 100
+base_damage = 8
+scaling_factor = 2
+first_floor = 3
+intent_pool = [{"type": 0, "value": 0}, {"type": 0, "value": 0}, {"type": 2, "value": 2}]
+mechanic = "halve_hand"
+mechanic_interval = 1
+phase_threshold = 0.5
+phase_mechanic = ""
+phase_text = ""
+phase_thresholds = []
+phase_mechanics = []
+phase_texts = []
+effect_immunity = ""
+effect_reflect = ""
+color = Color(1, 0.42, 0.208, 1)
+glitch_density = 0.4

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LatinHHeWindowEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_h_he_window.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "He's Window"
+description = "Once per turn: place root on occupied slot to swap (old root returns to hand)"
+trigger = 3
+priority = 100

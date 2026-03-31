@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PhonemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/phoneme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "ash"
+display_name = "Ash Pulse"
+ipa_symbol = "\u00e6"
+description = "If insulation is 0, gain 20. If above 0, double it but lose 5 cogency."
+rarity = 1
+is_consumable = true
+semant_cost = 11
+effects = []

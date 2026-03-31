@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PhonemeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/phoneme_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "retroflex_d"
+display_name = "Retroflex Scatter"
+ipa_symbol = "\u0256"
+description = "Randomize all enemy intents and shuffle order. 30% chance one enemy attacks twice next turn."
+rarity = 2
+is_consumable = true
+semant_cost = 14
+effects = []

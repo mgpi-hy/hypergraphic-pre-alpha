@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="OmicronPatienceShieldEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/omicron_patience.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Patience Shield"
+description = "Complete turn without filling all POS slots: +{insulation_bonus} insulation"
+trigger = 4
+priority = 100
+insulation_bonus = 3

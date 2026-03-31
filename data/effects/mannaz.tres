@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MannazEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/mannaz.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Novel Induction"
+description = "Novel words grant +{novel_bonus} flat induction in addition to multiplier"
+trigger = 10
+priority = 100
+novel_bonus = 3

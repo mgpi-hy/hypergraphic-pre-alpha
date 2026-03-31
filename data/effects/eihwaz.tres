@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EihwazEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/eihwaz.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Insulation Floor"
+description = "Insulation cannot degrade below {insulation_floor}"
+trigger = 15
+priority = 30
+insulation_floor = 1

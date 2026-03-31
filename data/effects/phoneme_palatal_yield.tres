@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PhonemePalatalYieldEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/phoneme_palatal_yield.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Palatal Yield"
+description = "Gain {semant_gain} semant; discard {discard_count} random morpheme"
+trigger = 0
+priority = 100
+semant_gain = 5
+discard_count = 1

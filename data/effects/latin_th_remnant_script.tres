@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LatinTHRemnantScriptEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/latin_th_remnant_script.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Remnant Script"
+description = "Germanic morphemes grant +{bonus_per_germanic} induction"
+trigger = 10
+priority = 100
+bonus_per_germanic = 3
