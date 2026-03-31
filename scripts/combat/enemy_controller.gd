@@ -27,6 +27,7 @@ class EnemyInstance extends RefCounted:
 	var insulation: int = 0
 	var base_damage: int = 0
 	var is_defeated: bool = false
+	var bonus_attacks: int = 0
 
 
 	func _init() -> void:
@@ -101,6 +102,11 @@ func execute_enemy_turn(combat_state: CombatState, effect_manager: EffectManager
 			continue
 		var result: Dictionary = _execute_intent(enemy, combat_state, effect_manager)
 		results.append(result)
+		# Bonus attacks from effects (e.g. Retroflex Scatter)
+		for _ba: int in range(enemy.bonus_attacks):
+			var bonus_result: Dictionary = _execute_intent(enemy, combat_state, effect_manager)
+			results.append(bonus_result)
+		enemy.bonus_attacks = 0
 
 		# Tick mechanic cooldown and fire periodic mechanic
 		if enemy.data.mechanic.is_empty():

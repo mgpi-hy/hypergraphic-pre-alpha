@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RareAnaphoraAlliterationEffect" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/implementations/rare_anaphora_alliteration.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Alliteration"
+description = "2+ placed words starting with the same letter = x1.3 multiplier"
+trigger = 10
+priority = 100
+alliteration_multiplier = 1.3

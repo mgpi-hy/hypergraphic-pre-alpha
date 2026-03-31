@@ -799,10 +799,6 @@ func _is_boss_encounter() -> bool:
 ## Process all pending flags set by EnemyController AND player effects.
 ## Enemy mechanic flags (pending_scramble, etc.) manipulate the syntax tree.
 ## Player effect flags (_pending_morpheme_swap, etc.) manipulate hand/slots.
-## TODO: Player effect pending flags (consume_pending_*) are not yet consumed.
-## Effects that set them (chi_morpheme_swap, delta_morphemic_drift, rare_mu_extra_branch,
-## rare_huo_burning, phoneme_pharyngeal_copy, phoneme_glottal_catch, etc.) will fire
-## but produce no visible result until the consumer is wired. Enemy mechanics work.
 func _apply_pending_mechanics() -> void:
 	var ui: CombatUI = _get_combat_ui()
 	var tree: SyntaxTree = null
@@ -892,6 +888,175 @@ func _apply_pending_mechanics() -> void:
 			var m: MorphemeData = _combat_state.hand.pick_random()
 			_combat_state.hand.erase(m)
 		_combat_state.pending_steal_morpheme = 0
+
+	# --- Player Effect Pending Flags ---
+
+	if _combat_state.consume_pending_morpheme_swap():
+		# Chi: swap a random hand morpheme with a random draw pile morpheme
+		if not _combat_state.hand.is_empty() and not _combat_state.draw_pile.is_empty():
+			var hand_idx: int = randi() % _combat_state.hand.size()
+			var draw_idx: int = randi() % _combat_state.draw_pile.size()
+			var from_hand: MorphemeData = _combat_state.hand[hand_idx]
+			var from_draw: MorphemeData = _combat_state.draw_pile[draw_idx]
+			_combat_state.hand[hand_idx] = from_draw
+			_combat_state.draw_pile[draw_idx] = from_hand
+			hand_updated.emit(_combat_state.hand)
+
+	if _combat_state.consume_pending_morphemic_drift():
+		# Delta: transform a random placed root to a random root of a different family
+		var roots_in_slots: Array[int] = []
+		for slot_idx: int in _placed_slots:
+			var morph: MorphemeData = _placed_slots[slot_idx] as MorphemeData
+			if morph and morph.type == MorphemeData.MorphemeType.ROOT:
+				roots_in_slots.append(slot_idx)
+		if not roots_in_slots.is_empty():
+			var target_slot: int = roots_in_slots.pick_random()
+			var old_morph: MorphemeData = _placed_slots[target_slot] as MorphemeData
+			# Find a root of a different family from the deck's morpheme pool
+			var candidates: Array[MorphemeData] = []
+			for m: MorphemeData in _combat_state.draw_pile:
+				if m.type == MorphemeData.MorphemeType.ROOT and m.family != old_morph.family:
+					candidates.append(m)
+			if not candidates.is_empty():
+				var replacement: MorphemeData = candidates.pick_random()
+				_placed_slots[target_slot] = replacement
+				# Update the placed morphemes list
+				var old_idx: int = _placed_morphemes.find(old_morph)
+				if old_idx >= 0:
+					_placed_morphemes[old_idx] = replacement
+
+	if _combat_state.consume_pending_ayin_gaze():
+		# Ayin: exile lowest-weight morpheme from hand, draw 2
+		if not _combat_state.hand.is_empty():
+			var lowest: MorphemeData = _combat_state.hand[0]
+			for m: MorphemeData in _combat_state.hand:
+				if m.base_induction < lowest.base_induction:
+					lowest = m
+			_combat_state.exhaust_morpheme(lowest)
+			_combat_state.draw_morphemes(2)
+			hand_updated.emit(_combat_state.hand)
+
+	if _combat_state.consume_pending_spite_spawn():
+		# Shin: add a temporary +3 any-POS morpheme to hand
+		var spite: MorphemeData = MorphemeData.new()
+		spite.root_text = "SPITE"
+		spite.display_name = "Spite"
+		spite.base_induction = 3
+		spite.type = MorphemeData.MorphemeType.ROOT
+		spite.pos_type = Enums.POSType.NOUN
+		spite.combat_role = MorphemeData.CombatRole.CONTENT
+		spite.rarity = MorphemeData.Rarity.COMMON
+		_combat_state.hand.append(spite)
+		hand_updated.emit(_combat_state.hand)
+
+	if _combat_state.consume_pending_force_submit():
+		# Velar Gambit: force submit tree now, damage for unfilled required slots
+		if tree:
+			var empty_required: int = 0
+			for slot: SyntaxSlot in tree.get_all_slots():
+				if slot.placed_morpheme == null and slot.is_required:
+					empty_required += 1
+			# Self-damage for empty required slots
+			_combat_state.player_cogency -= empty_required * 3
+		_on_submit()
+
+	var wildcard_data: Dictionary = _combat_state.consume_pending_wildcard_slot()
+	if not wildcard_data.is_empty():
+		# Open Lattice: add a wildcard POS slot
+		if tree:
+			tree.add_random_optional_slot()
+
+	if _combat_state.consume_pending_optional_slot():
+		# Mu: add optional slot to longest branch
+		if tree:
+			tree.add_random_optional_slot()
+
+	if _combat_state.consume_pending_burn_slot():
+		# Huo: highest-induction word's slot becomes wildcard (any POS fits)
+		if tree:
+			var best_slot: SyntaxSlot = null
+			var best_induction: int = -1
+			for slot: SyntaxSlot in tree.get_all_slots():
+				if slot.placed_morpheme != null:
+					if slot.placed_morpheme.base_induction > best_induction:
+						best_induction = slot.placed_morpheme.base_induction
+						best_slot = slot
+			if best_slot:
+				best_slot.is_required = false
+				best_slot.is_optional = true
+
+	var swap_data: Dictionary = _combat_state.consume_pending_hand_discard_swap()
+	if not swap_data.is_empty():
+		# Click Swap: swap a random root between hand and discard
+		var hand_roots: Array[int] = []
+		for i: int in range(_combat_state.hand.size()):
+			if _combat_state.hand[i].type == MorphemeData.MorphemeType.ROOT:
+				hand_roots.append(i)
+		var disc_roots: Array[int] = []
+		for i: int in range(_combat_state.discard_pile.size()):
+			if _combat_state.discard_pile[i].type == MorphemeData.MorphemeType.ROOT:
+				disc_roots.append(i)
+		if not hand_roots.is_empty() and not disc_roots.is_empty():
+			var hi: int = hand_roots.pick_random()
+			var di: int = disc_roots.pick_random()
+			var from_hand: MorphemeData = _combat_state.hand[hi]
+			var from_disc: MorphemeData = _combat_state.discard_pile[di]
+			_combat_state.hand[hi] = from_disc
+			_combat_state.discard_pile[di] = from_hand
+			hand_updated.emit(_combat_state.hand)
+
+	if _combat_state.consume_pending_double_attack():
+		# Retroflex Scatter: mark a random alive enemy to attack twice
+		var alive_enemies: Array[EnemyController.EnemyInstance] = _enemy_controller.get_alive_enemies()
+		if not alive_enemies.is_empty():
+			var target: EnemyController.EnemyInstance = alive_enemies.pick_random()
+			if target:
+				target.bonus_attacks += 1
+
+	var dup_data: Dictionary = _combat_state.consume_pending_duplicate_word()
+	if not dup_data.is_empty():
+		# Pharyngeal Copy: duplicate last placed word's induction as bonus
+		var dup_mult: float = dup_data.get("mult", 1.0)
+		if _combat_state.best_word_induction > 0:
+			var bonus: int = int(_combat_state.best_word_induction * dup_mult)
+			_combat_state.bonus_induction_next_submit += bonus
+
+	if _combat_state.consume_pending_reroll_slots():
+		# Rhotic Shift: randomize all empty slot POS types
+		if tree:
+			var pos_options: Array[Enums.POSType] = [
+				Enums.POSType.NOUN, Enums.POSType.VERB, Enums.POSType.ADJECTIVE,
+				Enums.POSType.ADVERB, Enums.POSType.DETERMINER, Enums.POSType.PREPOSITION,
+			]
+			var match_count: int = 0
+			for slot: SyntaxSlot in tree.get_all_slots():
+				if slot.placed_morpheme == null and not slot.is_locked:
+					slot.pos_type = pos_options.pick_random()
+					slot.update_display()
+					# Check if any hand morpheme matches the new POS
+					for m: MorphemeData in _combat_state.hand:
+						if m.pos_type == slot.pos_type:
+							match_count += 1
+							break
+			if match_count >= 2:
+				_combat_state.draw_morphemes(1)
+				hand_updated.emit(_combat_state.hand)
+
+	if _combat_state.consume_pending_clear_words():
+		# Glottal Catch: clear all placed words, draw 2 per word cleared
+		if tree:
+			var words_cleared: int = 0
+			for slot: SyntaxSlot in tree.get_all_slots():
+				if slot.placed_morpheme != null:
+					var m: MorphemeData = slot.placed_morpheme
+					_combat_state.hand.append(m)
+					slot.clear_slot()
+					words_cleared += 1
+			_placed_morphemes.clear()
+			_placed_slots.clear()
+			if words_cleared > 0:
+				_combat_state.draw_morphemes(words_cleared * 2)
+				hand_updated.emit(_combat_state.hand)
 
 
 ## Get the display name of the last alive (or most recent) enemy.
