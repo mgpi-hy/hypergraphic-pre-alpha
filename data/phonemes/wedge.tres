@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="PhonemeData" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="PhonemeData" load_steps=3 format=3]
 
 [ext_resource type="Script" path="res://scripts/data/phoneme_data.gd" id="1"]
+[ext_resource type="Resource" path="res://data/effects/phoneme_strut_guard.tres" id="2"]
 
 [resource]
 script = ExtResource("1")
@@ -11,4 +12,4 @@ description = "Halve enemy base damage for 2 turns"
 rarity = 2
 is_consumable = true
 semant_cost = 15
-effects = []
+effects = [ExtResource("2")]

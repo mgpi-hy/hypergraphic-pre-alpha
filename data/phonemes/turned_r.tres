@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="PhonemeData" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="PhonemeData" load_steps=3 format=3]
 
 [ext_resource type="Script" path="res://scripts/data/phoneme_data.gd" id="1"]
+[ext_resource type="Resource" path="res://data/effects/phoneme_rhotic_shift.tres" id="2"]
 
 [resource]
 script = ExtResource("1")
@@ -11,4 +12,4 @@ description = "Reroll all empty slot POS types. If 2+ now match your hand, draw 
 rarity = 1
 is_consumable = true
 semant_cost = 10
-effects = []
+effects = [ExtResource("2")]

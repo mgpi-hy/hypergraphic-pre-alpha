@@ -1,6 +1,8 @@
-[gd_resource type="Resource" script_class="CharacterData" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CharacterData" load_steps=4 format=3]
 
 [ext_resource type="Script" path="res://scripts/data/character_data.gd" id="1"]
+[ext_resource type="Resource" path="res://data/effects/passive_ken_kenning_steal.tres" id="2"]
+[ext_resource type="Resource" path="res://data/effects/passive_ken_no_insulation.tres" id="3"]
 
 [resource]
 script = ExtResource("1")
@@ -9,7 +11,7 @@ display_name = "Ken"
 language = "Old English"
 passive_name = "Kenning"
 passive_description = "No insulation. Kennings (two noun roots) steal cogency equal to half their induction."
-passive_effects = []
+passive_effects = [ExtResource("2"), ExtResource("3")]
 primary_family = 0
 allowed_families = [0]
 starter_cogency = 50
